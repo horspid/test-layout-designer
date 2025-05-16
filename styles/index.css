@@ -1,0 +1,445 @@
+html {
+  min-height: 100vh;
+  height: max-content;
+  background-image: url("../img/background.jpg");
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+}
+
+body {
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.3) 0%,
+    rgba(70, 70, 70, 0.22) 28%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  font-family: "Actay", sans-serif;
+  color: #fff;
+}
+
+h1,
+.header__logo {
+  font-family: "Actay Wide", sans-serif;
+  font-size: 32px;
+  line-height: 95%;
+}
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-menu {
+  display: flex;
+  align-items: center;
+}
+
+.header__logo {
+  max-width: 140px;
+}
+
+.container {
+  padding: 32px 70px;
+  margin: 0 auto;
+  max-width: 1280px;
+  height: 100%;
+}
+
+.header-nav {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  font-size: 20px;
+  margin-left: 12px;
+}
+
+.header-nav__items {
+  display: flex;
+  gap: 40px;
+}
+
+.header-nav__item {
+  list-style-type: none;
+}
+
+.header-link {
+  display: block;
+  border-bottom: 1px solid #fff;
+  color: #fff;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.header-link__name {
+  margin-right: 20px;
+}
+
+.content {
+  margin-top: 45px;
+  display: flex;
+  flex-direction: column;
+}
+
+.content__heading {
+  text-align: center;
+  font-size: 90px;
+}
+
+.roadmap {
+  position: relative;
+  margin-top: 73px;
+  height: 442px;
+}
+
+.roadmap::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 50px;
+  left: 20px;
+  background-image: url("../img/icons/lines.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.roadmap__item {
+  position: absolute;
+  z-index: 10;
+  border: 3px solid #fff;
+  border-radius: 35px 0 35px 0;
+  padding: 12px;
+  width: max-content;
+
+  display: flex;
+  gap: 10px;
+  align-items: center;
+
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.roadmap__item--second {
+  top: 246px;
+  left: 78px;
+}
+
+.roadmap__item--third {
+  top: 342px;
+  left: 428px;
+}
+
+.roadmap__item--fourth {
+  top: 112px;
+  left: 355px;
+}
+.roadmap__item--fifth {
+  top: 40px;
+  right: 15px;
+}
+
+.roadmap__item--sixth {
+  top: 196px;
+  right: 154px;
+}
+
+.roadmap__bullet {
+  border: 1px solid #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 51px;
+  height: 51px;
+  border-radius: 50%;
+  background-color: #5e7600;
+}
+
+.roadmap__img {
+  filter: drop-shadow(0px 10px 6px rgba(255, 255, 255, 0.15));
+}
+
+.roadmap__text {
+  color: #f6ffd2;
+  font-size: 14px;
+  max-width: 195px;
+}
+
+.roadmap__icon {
+  top: -14px;
+  position: absolute;
+  right: -14px;
+}
+
+.roadmap__vector {
+  filter: drop-shadow(0px 4px 15px rgba(255, 255, 255, 0.35));
+}
+.roadmap__button {
+  border: none;
+  cursor: pointer;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 48px;
+  width: max-content;
+  font-family: "Inter", sans-serif;
+  font-size: 24px;
+  padding: 10px 78px;
+  border-radius: 167px;
+}
+
+#popup-overlay {
+  z-index: 100;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.56);
+  display: none;
+}
+
+#popup {
+  display: flex;
+  flex-direction: column;
+  color: #000;
+  font-family: "Inter", sans-serif;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 993px;
+  width: 100%;
+  background-color: #fff;
+  padding: 96px 61px;
+  border-radius: 35px;
+}
+
+#popup__close {
+  right: 20px;
+  top: 20px;
+  position: absolute;
+  cursor: pointer;
+}
+
+.popup__text {
+  text-align: center;
+  line-height: 140%;
+  max-width: 871px;
+  margin: 0 auto;
+}
+
+/* ADAPTIVE */
+@media (max-width: 1280px) {
+  .roadmap__item--third {
+    top: 342px;
+    left: unset;
+    right: 428px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .roadmap__text {
+    max-width: 150px;
+  }
+
+  .roadmap__bullet {
+    width: 40px;
+    height: 40px;
+  }
+  .roadmap__item--fifth {
+    top: 40px;
+    right: 0;
+  }
+
+  .roadmap__item--sixth {
+    top: 180px;
+    right: 120px;
+  }
+
+  .roadmap__item--third {
+    top: 300px;
+    left: unset;
+    right: 428px;
+  }
+
+  .roadmap__item--fourth {
+    top: 100px;
+    left: unset;
+    right: 380px;
+  }
+
+  .roadmap__item--second {
+    top: 210px;
+    left: unset;
+    right: 680px;
+  }
+}
+
+@media (max-width: 1070px) {
+  .roadmap__item--sixth {
+    top: 165px;
+    right: 120px;
+  }
+
+  .roadmap__item--second {
+    top: 210px;
+    right: 620px;
+  }
+  .roadmap__item--third {
+    top: 280px;
+    right: 350px;
+  }
+  .roadmap__item--fourth {
+    top: 100px;
+    left: unset;
+    right: 340px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .roadmap::after {
+    display: none;
+  }
+  .roadmap {
+    height: max-content;
+  }
+  .roadmap__button {
+    margin-top: 100px;
+  }
+
+  .roadmap__item {
+    justify-items: center;
+    text-align: center;
+    margin-right: 12px;
+    margin-top: 12px;
+    padding: 44px 18px;
+    position: unset;
+    top: unset;
+    left: unset;
+    right: unset;
+    bottom: unset;
+  }
+
+  .snake-arrow {
+    padding: 0;
+    position: absolute;
+    bottom: calc(-24px - 18px);
+    font-family: "Actay", sans-serif;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    background: none;
+    border: none;
+    color: #fff;
+  }
+
+  .snake-next {
+    right: 0;
+  }
+
+  .snake-next img {
+    transform: rotate(180deg);
+  }
+
+  .roadmap__bullet {
+    height: 74px;
+    width: 74px;
+  }
+
+  .roadmap__text {
+    margin-top: 22px;
+    max-width: 254px;
+  }
+
+  .header--mobile > .header__logo {
+    font-size: 20px;
+    max-width: 88px;
+    color: #f2f3ef;
+  }
+
+  .container {
+    padding: 30px 15px;
+  }
+
+  .header > .header-nav {
+    display: none;
+  }
+
+  .header--mobile > .header-nav {
+    display: flex;
+  }
+  .header-burger {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .header-burger__img {
+    width: 40px;
+    height: 40px;
+    background-repeat: no-repeat;
+  }
+
+  .header-burger > .header-burger__img {
+    background-image: url(../img/icons/burger.svg);
+  }
+
+  .header-burger--close > .header-burger__img {
+    background-image: url(../img/icons/close.svg);
+  }
+
+  .header--mobile a {
+    color: #000;
+  }
+
+  .header--mobile {
+    color: #000;
+    align-items: baseline;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 48%;
+    background-color: rgba(255, 255, 255, 0.95);
+    z-index: 9999;
+    /* Можно добавить плавное появление */
+    opacity: 1;
+    transition: opacity 0.3s ease;
+  }
+
+  .header--mobile > .header-nav {
+    flex-direction: column;
+    width: max-content;
+    gap: 40px;
+    align-items: center;
+    margin-left: 0;
+  }
+  .header--mobile > .header-nav > .header-nav__items {
+    flex-direction: column;
+    padding: 0;
+  }
+
+  .header--mobile .header-link {
+    border-bottom: 1px solid #000;
+  }
+  .header--mobile svg {
+    stroke: #000;
+  }
+
+  .header-nav__list--mobile {
+    width: max-content;
+    padding: 0;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 768px) {
+  .content__heading {
+    font-size: 35px;
+  }
+}
