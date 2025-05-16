@@ -24,7 +24,7 @@ h1,
   font-size: 32px;
   line-height: 95%;
 }
-.header {
+.header__wrapper {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -40,12 +40,20 @@ h1,
 }
 
 .container {
-  padding: 32px 70px;
+  padding: 12px 70px;
   margin: 0 auto;
   max-width: 1280px;
   height: 100%;
 }
 
+.content__container {
+  margin: 0 auto;
+  max-width: 1280px;
+  width: 100%;
+  padding: 0 70px;
+  display: flex;
+  flex-direction: column;
+}
 .header-nav {
   display: flex;
   justify-content: space-between;
@@ -76,7 +84,7 @@ h1,
 }
 
 .content {
-  margin-top: 45px;
+  margin-top: 35px;
   display: flex;
   flex-direction: column;
 }
@@ -300,6 +308,9 @@ h1,
 }
 
 @media (max-width: 1000px) {
+  .content__container {
+    padding: 0;
+  }
   .roadmap::after {
     display: none;
   }
@@ -315,7 +326,7 @@ h1,
     text-align: center;
     margin-right: 12px;
     margin-top: 12px;
-    padding: 44px 18px;
+    padding: 39px 18px;
     position: unset;
     top: unset;
     left: unset;
@@ -335,9 +346,11 @@ h1,
     border: none;
     color: #fff;
   }
-
+  .snake-prev {
+    left: 15px;
+  }
   .snake-next {
-    right: 0;
+    right: 15px;
   }
 
   .snake-next img {
@@ -364,7 +377,7 @@ h1,
     padding: 30px 15px;
   }
 
-  .header > .header-nav {
+  .header__wrapper > .header-nav {
     display: none;
   }
 
@@ -407,9 +420,6 @@ h1,
     height: 48%;
     background-color: rgba(255, 255, 255, 0.95);
     z-index: 9999;
-    /* Можно добавить плавное появление */
-    opacity: 1;
-    transition: opacity 0.3s ease;
   }
 
   .header--mobile > .header-nav {
@@ -436,9 +446,55 @@ h1,
     padding: 0;
     flex-direction: column;
   }
-}
 
-@media (max-width: 768px) {
+  .roadmap__item {
+    margin: 15px 15px 0 15px;
+  }
+  .header--mobile .header__logo {
+    color: #f2f3ef;
+  }
+  .header--mobile .header-nav {
+    align-items: center;
+    width: max-content;
+    display: flex;
+    gap: 28px;
+    flex-direction: column;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 30px;
+    margin-left: 0;
+  }
+  .header--mobile .header-link__name {
+    margin-right: 50px;
+  }
+  .content {
+    margin-top: 5px;
+  }
+
+  .content--mobile {
+    margin-top: 105px;
+  }
+  .header--mobile .header-nav * {
+    font-size: 14px;
+  }
+  .header-nav__list--mobile {
+    gap: 15px;
+  }
+  .header--mobile {
+    height: 44%;
+  }
+  .roadmap {
+    margin-top: 23px;
+  }
+  .roadmap__button {
+    padding: 7px 63px;
+  }
+
+  .header__logo {
+    font-size: 20px;
+    max-width: 88px;
+  }
   .content__heading {
     font-size: 35px;
   }

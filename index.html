@@ -1,134 +1,171 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Epc Hunters</title>
-    <link rel="stylesheet" href="styles/reset.css">
-    <link rel="stylesheet" href="styles/fonts.css">
-    <link rel="stylesheet" href="styles/index.css">
-    <link rel="stylesheet" href="cdn/snake/snake.css">
-    <!-- <link rel="stylesheet" href="cdn/snake/snake-theme.css"> -->
+    <link rel="stylesheet" href="styles/reset.css" />
+    <link rel="stylesheet" href="styles/fonts.css" />
+    <link rel="stylesheet" href="styles/index.css" />
+    <link rel="stylesheet" href="cdn/snake/snake.css" />
     <script src="cdn/snake/snake.js"></script>
     <script src="scripts/slider.js"></script>
-</head>
+  </head>
 
-<body>
-    <div class="container">
-        <header class="header" id="header">
-            <a class="header__logo">Epc Hunters</a>
-            <nav class="header-nav">
-                <ul class="header-nav__items" id="header-nav__list">
-                    <li class="header-nav__item">Loren Ipsum</li>
-                    <li class="header-nav__item">Loren Ipsum</li>
-                    <li class="header-nav__item">Loren Ipsum</li>
-                </ul>
-                <a href="#" class="header-link">
-                    <span class="header-link__name">LOREN IPSUM</span>
-                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M5.9912 0H12V6.0088H11.2489V1.28509L0.528117 12L0 11.4719L10.7149 0.7511H5.9912V0Z"
-                            fill="white" />
-                    </svg>
-                </a>
-            </nav>
-            <div onclick="menuSwitch()" id="header-burger" class="header-burger">
-                <div class="header-burger__img"></div>
+  <body>
+    <header class="header" id="header">
+      <div class="container">
+        <div class="header__wrapper">
+          <a class="header__logo">Epc Hunters</a>
+          <nav class="header-nav">
+            <ul class="header-nav__items" id="header-nav__list">
+              <li class="header-nav__item">Loren Ipsum</li>
+              <li class="header-nav__item">Loren Ipsum</li>
+              <li class="header-nav__item">Loren Ipsum</li>
+            </ul>
+            <a href="#" class="header-link">
+              <span class="header-link__name">LOREN IPSUM</span>
+              <svg
+                width="12"
+                height="12"
+                viewBox="0 0 12 12"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M5.9912 0H12V6.0088H11.2489V1.28509L0.528117 12L0 11.4719L10.7149 0.7511H5.9912V0Z"
+                  fill="white"
+                />
+              </svg>
+            </a>
+          </nav>
+          <div onclick="menuSwitch()" id="header-burger" class="header-burger">
+            <div class="header-burger__img"></div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="content" id="content">
+      <div class="content__container">
+        <h1 class="content__heading">Loren Ipsum</h1>
+        <div class="roadmap slider">
+          <div class="roadmap__item">
+            <div class="roadmap__bullet">
+              <img src="img/icons/1.svg" alt="" class="roadmap__img" />
             </div>
-        </header>
-        <main class="content">
-            <h1 class="content__heading">Loren Ipsum</h1>
-            <div class="roadmap slider">
-                <div class="roadmap__item">
-                    <div class="roadmap__bullet">
-                        <img src="img/icons/1.svg" alt="" class="roadmap__img">
-                    </div>
-                    <div class="roadmap__text">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit
-                    </div>
-                    <div class="roadmap__icon">
-                        <img src="img/icons/roadmap-vector.svg" alt="" class="roadmap__vector">
-                    </div>
-                </div>
-                <div class="roadmap__item roadmap__item--second">
-                    <div class="roadmap__bullet">
-                        <img src="img/icons/2.svg" alt="" class="roadmap__img">
-                    </div>
-                    <div class="roadmap__text">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit
-                    </div>
-                    <div class="roadmap__icon">
-                        <img src="img/icons/roadmap-vector.svg" alt="" class="roadmap__vector">
-                    </div>
-                </div>
-                <div class="roadmap__item roadmap__item--third">
-                    <div class="roadmap__bullet">
-                        <img src="img/icons/3.svg" alt="" class="roadmap__img">
-                    </div>
-                    <div class="roadmap__text">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit
-                    </div>
-                    <div class="roadmap__icon">
-                        <img src="img/icons/roadmap-vector.svg" alt="" class="roadmap__vector">
-                    </div>
-                </div>
-                <div class="roadmap__item roadmap__item--fourth">
-                    <div class="roadmap__bullet">
-                        <img src="img/icons/4.svg" alt="" class="roadmap__img">
-                    </div>
-                    <div class="roadmap__text">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit
-                    </div>
-                    <div class="roadmap__icon">
-                        <img src="img/icons/roadmap-vector.svg" alt="" class="roadmap__vector">
-                    </div>
-                </div>
-                <div class="roadmap__item roadmap__item--fifth">
-                    <div class="roadmap__bullet">
-                        <img src="img/icons/5.svg" alt="" class="roadmap__img">
-                    </div>
-                    <div class="roadmap__text">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit
-                    </div>
-                    <div class="roadmap__icon">
-                        <img src="img/icons/roadmap-vector.svg" alt="" class="roadmap__vector">
-                    </div>
-                </div>
-                <div class="roadmap__item roadmap__item--sixth">
-                    <div class="roadmap__bullet">
-                        <img src="img/icons/6.svg" alt="" class="roadmap__img">
-                    </div>
-                    <div class="roadmap__text">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit
-                    </div>
-                    <div class="roadmap__icon">
-                        <img src="img/icons/roadmap-vector.svg" alt="" class="roadmap__vector">
-                    </div>
-                </div>
+            <div class="roadmap__text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit
             </div>
-            <button class="roadmap__button" onclick="showPopup()">INFO</button>
-            <div id="popup-overlay">
-                <div id="popup">
-                    <div id="popup__close" onclick="hidePopup()">
-                        <img src="img/icons/close.svg" alt="close">
-                    </div>
-                    <div class="popup__text">
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. In accusantium, aliquid ab doloribus
-                        quo possimus minus dolorem. Sequi explicabo quidem rem veniam rerum itaque consectetur
-                        accusamus, impedit molestiae ut enim! Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                        In accusantium, aliquid ab doloribus quo possimus minus dolorem. Sequi explicabo quidem rem
-                        veniam rerum itaque consectetur accusamus, impedit molestiae ut enim! Lorem ipsum dolor sit,
-                        amet consectetur adipisicing elit. In accusantium, aliquid ab doloribus quo possimus minus
-                        dolorem. Sequi explicabo quidem rem veniam rerum itaque consectetur accusamus, impedit molestiae
-                        ut enim! Lorem ipsum dolor sit, amet consectetur adipisicing elit. In accusantium, aliquid ab
-                        doloribus quo possimus minus dolorem. Sequi explicabo quidem rem veniam rerum itaque consectetur
-                        accusamus, impedit molestiae ut enim!
-                    </div>
-                </div>
+            <div class="roadmap__icon">
+              <img
+                src="img/icons/roadmap-vector.svg"
+                alt=""
+                class="roadmap__vector"
+              />
             </div>
-        </main>
-    </div>
+          </div>
+          <div class="roadmap__item roadmap__item--second">
+            <div class="roadmap__bullet">
+              <img src="img/icons/2.svg" alt="" class="roadmap__img" />
+            </div>
+            <div class="roadmap__text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit
+            </div>
+            <div class="roadmap__icon">
+              <img
+                src="img/icons/roadmap-vector.svg"
+                alt=""
+                class="roadmap__vector"
+              />
+            </div>
+          </div>
+          <div class="roadmap__item roadmap__item--third">
+            <div class="roadmap__bullet">
+              <img src="img/icons/3.svg" alt="" class="roadmap__img" />
+            </div>
+            <div class="roadmap__text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit
+            </div>
+            <div class="roadmap__icon">
+              <img
+                src="img/icons/roadmap-vector.svg"
+                alt=""
+                class="roadmap__vector"
+              />
+            </div>
+          </div>
+          <div class="roadmap__item roadmap__item--fourth">
+            <div class="roadmap__bullet">
+              <img src="img/icons/4.svg" alt="" class="roadmap__img" />
+            </div>
+            <div class="roadmap__text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit
+            </div>
+            <div class="roadmap__icon">
+              <img
+                src="img/icons/roadmap-vector.svg"
+                alt=""
+                class="roadmap__vector"
+              />
+            </div>
+          </div>
+          <div class="roadmap__item roadmap__item--fifth">
+            <div class="roadmap__bullet">
+              <img src="img/icons/5.svg" alt="" class="roadmap__img" />
+            </div>
+            <div class="roadmap__text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit
+            </div>
+            <div class="roadmap__icon">
+              <img
+                src="img/icons/roadmap-vector.svg"
+                alt=""
+                class="roadmap__vector"
+              />
+            </div>
+          </div>
+          <div class="roadmap__item roadmap__item--sixth">
+            <div class="roadmap__bullet">
+              <img src="img/icons/6.svg" alt="" class="roadmap__img" />
+            </div>
+            <div class="roadmap__text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit
+            </div>
+            <div class="roadmap__icon">
+              <img
+                src="img/icons/roadmap-vector.svg"
+                alt=""
+                class="roadmap__vector"
+              />
+            </div>
+          </div>
+        </div>
+        <button class="roadmap__button" onclick="showPopup()">INFO</button>
+        <div id="popup-overlay">
+          <div id="popup">
+            <div id="popup__close" onclick="hidePopup()">
+              <img src="img/icons/close.svg" alt="close" />
+            </div>
+            <div class="popup__text">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. In
+              accusantium, aliquid ab doloribus quo possimus minus dolorem.
+              Sequi explicabo quidem rem veniam rerum itaque consectetur
+              accusamus, impedit molestiae ut enim! Lorem ipsum dolor sit, amet
+              consectetur adipisicing elit. In accusantium, aliquid ab doloribus
+              quo possimus minus dolorem. Sequi explicabo quidem rem veniam
+              rerum itaque consectetur accusamus, impedit molestiae ut enim!
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. In
+              accusantium, aliquid ab doloribus quo possimus minus dolorem.
+              Sequi explicabo quidem rem veniam rerum itaque consectetur
+              accusamus, impedit molestiae ut enim! Lorem ipsum dolor sit, amet
+              consectetur adipisicing elit. In accusantium, aliquid ab doloribus
+              quo possimus minus dolorem. Sequi explicabo quidem rem veniam
+              rerum itaque consectetur accusamus, impedit molestiae ut enim!
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
     <script src="scripts/index.js"></script>
-</body>
-
+  </body>
 </html>
