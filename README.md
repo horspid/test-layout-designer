@@ -1,6 +1,6 @@
 
 
-# [Перейти на test-layout-designer](https://horspid.github.io/test-layout-designer/))
+# [Перейти на test-layout-designer](https://horspid.github.io/test-layout-designer/)
 ## Описание проекта
 - Для разработки использовал чистый js, css, html.
 - Для слайдера решил использовать готовый слайдер - snake slider. В результате чего, при изменении разрешения на компьютере - слайдер невозможно убрать. Переделывать не стал, так как поджимает дедлайн.
